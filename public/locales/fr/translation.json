@@ -3,6 +3,7 @@
 	"footer-title": "Pied de page",
 	"menu": {
 		"contact": "Contact",
-		"home": "Accueil"
+		"home": "Accueil",
+		"meteo": "Méteo"
 	}
 }

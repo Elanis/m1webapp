@@ -3,6 +3,7 @@
 	"footer-title": "Footer",
 	"menu": {
 		"contact": "Contact",
-		"home": "Home"
+		"home": "Home",
+		"meteo": "Weather"
 	}
 }
