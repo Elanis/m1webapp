@@ -8,6 +8,7 @@ export default function Header({ changeLanguage, name, t }) {
 				<li><Link to="/">{t('menu.home')}</Link></li>
 				<li><Link to="/contact">{t('menu.contact')}</Link></li>
 				<li><Link to="/meteo">{t('menu.meteo')}</Link></li>
+				<li><Link to="/blague">{t('menu.blague')}</Link></li>
 				<li>
 					<input
 						type="button"
