@@ -9,6 +9,15 @@ export default function Meteo({ meteo }) {
 		return <p>Loading...</p>;
 	}
 
+	const values = [];
+	for (let i = 0; i < meteo.hourly.time.length; i++) {
+		values.push({
+			key: meteo.hourly.time[i],
+			date: formatDate(meteo.hourly.time[i]),
+			value: meteo.hourly.temperature_2m[i]
+		});
+	}
+
 	return (
 		<div>
 			<h1>Météo</h1>
@@ -20,10 +29,10 @@ export default function Meteo({ meteo }) {
 					</tr>
 				</thead>
 				<tbody>
-					{meteo.hourly.time.map((time, index) => (
-						<tr key={time}>
-							<td>{formatDate(time)}</td>
-							<td>{meteo.hourly.temperature_2m[index]}</td>
+					{values.map((val) => (
+						<tr key={val.key}>
+							<td>{val.date}</td>
+							<td>{val.value}</td>
 						</tr>
 					))}
 				</tbody>
